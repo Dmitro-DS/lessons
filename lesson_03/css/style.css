@@ -64,16 +64,26 @@
 .main-info {
     color: rgb(17, 0, 168);
 }
-div.block-info p, li {
+div.block-info p, li, .question {
     color: brown;
 }
 a {
     color: red;
 }
-.block-info h2 {
+#culture, h2#kitchen, [id*="trav"] {
     color: blue;
 }
+
 .main-info .second-text, 
 .info .second-text {
     color: black;
+}
+.laws-ukraine > p {
+    color: rgb(0, 150, 150);
+}
+.block-info ~ p {
+    color: rgb(230, 0, 255);
+}
+.laws-ukraine + p {
+    color: rgb(240, 148, 0);
 }
