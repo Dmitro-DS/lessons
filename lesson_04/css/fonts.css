@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Praysire";
+    src: url("../fonts/PraysireDemo.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Holos-Bold";
+    src: url("../fonts/Holos-Bold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Auntie";
+    src: url("../fonts/Auntie.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

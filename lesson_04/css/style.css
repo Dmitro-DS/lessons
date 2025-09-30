@@ -1,0 +1,105 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell%20Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url("fonts.css");
+
+p {
+    text-align: justify;
+}
+.victor-mono {
+    color:rgb(0, 70, 168);
+    font-family: "Victor Mono", sans-serif;
+}
+.victor-mono h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 42px;
+    text-decoration: underline;
+}
+.victor-mono-regular {
+    
+    font-weight: 400;
+    font-size: 24px;
+}
+.victor-mono-700 {
+    
+    font-weight: 700;
+    font-size: 24px;
+}
+.victor-mono-italic {
+   
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+}
+.shantell-sans {
+    color: rgb(68, 110, 0);
+    font-family: "Shantell Sans", sans-serif;
+}
+.shantell-sans h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 42px;
+    text-decoration: underline;
+}
+.shantell-sans-regular {
+    font-weight: 400;
+    font-size: 24px;
+}
+.shantell-sans-700 {
+    font-weight: 700;
+    font-size: 24px;
+}
+.shantell-sans-italic {
+    font-weight: 400;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.holos-bold, .title {
+    color: brown;
+    font-family: "Holos-Bold", serif;
+    line-height: 1.4;
+}
+.holos-bold .t-d-overline {
+    text-decoration: overline;
+}
+.title {
+    font-size: 74px;
+    text-align: center;
+    letter-spacing: 20px;
+}
+.holos-bold h2 {
+    font-size: 42px;
+}
+.holos-bold h3 {
+    font-size: 30px;
+    text-decoration: line-through;
+    text-decoration-color: blueviolet;
+}
+.auntie {
+    font-family: "Auntie", sans-serif;
+    font-size: 24px;
+    color: brown;
+}
+.auntie h3 {
+    font-size: 36px;
+    text-decoration: none;
+}
+h1 {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-shadow: 2px 5px 4px #1d0000;
+    text-transform: uppercase;
+}
+.scriptorama-italic {
+    white-space: nowrap;
+}
+.scriptorama-italic h3 {
+    text-decoration-style: dotted;
+}
+h2 {
+    letter-spacing: 10px;
+}

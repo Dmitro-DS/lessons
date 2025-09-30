@@ -1,0 +1,46 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair%20Display:wght@400&display=swap'); */
+
+@import url("fonts.css");
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+}
+.title {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.title {
+    /* color: #ba936f; */
+    color: rgba(186, 147, 111, 0.74);
+    text-align: center;
+}
+p {
+    text-align: justify;
+    line-height: 1.4;
+    word-spacing: 30px;
+    white-space: nowrap;
+}
+/* line-height краще використовувати в частинах. Наприклад шрифт 24 а у фігмі  lh:28px тоді 28/24=1.4 
+В такому вигляді він успадковується, якщо вказати у відсотках то успадковуватись не буде*/
+.title {
+    text-decoration: line-through;
+    text-decoration-color: blue;
+    text-decoration-style: wavy;
+    text-shadow: 
+    2px 2px 1px #000,
+    5px 8px 2px green;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    
+    /* letter-spacing - відстань між символами 
+    word-spacing - відстань між словами
+    white-space: nowrap; - убирає перенос слів
+
+    */
+}
