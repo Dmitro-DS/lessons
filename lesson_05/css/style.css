@@ -2,8 +2,6 @@
 @import url("reset.css");
 
 
-@import url("fonts.css");
-
 * {
     font-style: normal;
     font-family: "Lato", sans-serif;
@@ -63,4 +61,5 @@
     
     
 }
+
 /* 1180*484 */
