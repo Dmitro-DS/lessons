@@ -44,15 +44,14 @@ p{
 .last-block {
 	text-align: center;
 }
-.last-block img {
-	width: 33.333%;
-	vertical-align: top;
-	
+.last-block img:nth-of-type(odd) {
+	height: 477px;
 }
 .last-block img:not(:last-of-type) {
-	padding-right: 30px;
+	padding-right: 50px;
 }
 .last-block img {
 	vertical-align: top;
 }
+
 
