@@ -1,0 +1,57 @@
+@import url("reset.css");
+
+body{
+	background-color: #eee7e7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	max-width: 1366px;
+	margin: 30px auto;
+}
+.flower {
+	background: url(../img/flower-left.png) no-repeat left / contain, url(../img/flower-right.png)no-repeat right / contain;
+	height: 300px;
+	text-align: center;
+}
+.block,
+.last-block{
+	margin-bottom: 30px;
+	background-color: #fff;
+	min-width: 500px;
+	padding: 10px;
+	border-radius: 30px;
+	font-size: 0;
+}
+
+.right {
+	text-align: right;
+}
+.block > * {
+vertical-align: middle;
+padding-right: 10px;
+}
+span{
+	font-weight: 600;
+	font-size: 18px;
+}
+p{
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+.last-block {
+	text-align: center;
+}
+.last-block img {
+	width: 33.333%;
+	vertical-align: top;
+	
+}
+.last-block img:not(:last-child) {
+	padding-right: 30px;
+}
+.last-block img {
+	vertical-align: top;
+}
