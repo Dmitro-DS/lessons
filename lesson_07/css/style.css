@@ -1,0 +1,318 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Головна сторінка */
+.choice {
+    background:  url(../img/Red_and_blue_pill.jpg) no-repeat;
+    max-width: 600px;
+    min-height: 400px;
+    margin: 150px auto;
+}
+
+.button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Comic Relief';
+    font-size: 42px;
+}
+.button-game:hover {
+    color: #ff9292;
+    
+}
+.button-cards:hover {
+   color: #83b9ff;
+}
+.button-game {
+    margin-top: 105px;
+    margin-left: 80px;
+    color: #6e0e11;
+}
+.button-cards {
+    margin-left: 125px;
+    color: #180e6e;
+}
+
+/* CSS Для Гри */
+.txt {
+    font-family: 'Comic Relief';
+    font-weight: 700;
+}
+
+.game {
+    max-width: 1366px;
+    height: 725px;
+    margin: 0 auto;
+    background-color: #000;
+}   
+.submarine {
+    max-width: 1366px;
+    height: 200px;
+    background: url(../img/submarine.jpg) 0 -40px / 1366px 250px no-repeat;
+    /* padding: 120px 0 0 450px; */
+    padding: 40px 0 0 10px;
+    color: #6d777e;
+    font-size: 24px;
+    text-shadow: 0 0 3px #000;
+}
+.task {
+    display: inline-block;
+    margin-left: 300px;
+    line-height: 1.2;
+}
+.menu {
+    /* margin: 10px 0 0 -445px; */
+    display: inline-block;
+    width: 136px;
+    height: 69px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    line-height: 1.4;
+}
+.menu a:nth-child(1):hover,
+.menu a:nth-child(2):hover{
+    color: #9b9bad;
+}
+
+.entrance {
+    width: 150px;
+    height: 90px;
+    background: #06090a;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 20px 1px #d9f0ff;
+    margin-left: 280px;
+    margin-top: -90px;
+    
+}
+.c01 {
+    width: 15px;
+    height: 200px;
+    margin-left: 348px;
+    margin-top: -1px;
+    
+}
+.c02 {
+    width: 100px;
+    height: 8px;
+    margin-left: 348px;
+    
+}
+.c03 {
+    width: 30px;
+    height: 50px;
+    margin-left: 445px;
+    margin-top: -50px;
+}
+.c04 {
+    width: 200px;
+    height: 10px;
+    margin-left: 475px;
+    margin-top: -50px;
+}
+.c05 {
+    width: 5px;
+    height: 100px;
+    margin-left: 675px;
+    margin-top: -10px;
+}
+.c06 {
+    width: 150px;
+    height: 10px;
+    margin-left: 675px;
+    margin-top: -10px;
+}
+.c07 {
+    width: 30px;
+    height: 100px;
+    margin-left: 825px;
+    margin-top: -10px;
+}
+.c08 {
+    width: 200px;
+    height: 20px;
+    margin-left: 625px;
+    margin-top: -20px;
+}
+.c09 {
+    width: 10px;
+    height: 100px;
+    margin-left: 625px;
+    margin-top: -10px;
+}
+
+.c010 {
+    margin-top: -5px;
+    margin-left: 585px;
+    size: 24px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 25px;
+}
+.cub {
+    background: #6d777e;
+    visibility: hidden;
+}
+.entrance:hover + .c01,
+.cub:hover,
+.cub:hover + [class*="c0"] {
+    visibility: visible;
+}
+
+
+
+/* Картки */
+
+.menu-head {
+    font-family: sans-serif;
+    font-weight: 700;
+   background-color: #e9e9e9;
+    max-width: 1366px;
+    min-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+    margin: 0 auto;
+    border-radius: 60%;
+}
+.menu-head a {
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    background-color: #c7e7fc;
+    border: #000 solid 1px;
+    border-radius: 50%;
+    padding-top: 9px;
+    margin: 0 50px;
+}
+.menu-head a:nth-of-type(1):hover,
+.menu-head a:nth-of-type(2):hover{
+    background-color: #a2daff;
+}
+
+
+.container {
+    max-width: 1366px;
+    background-color: #e9e9e9;
+    margin: 30px auto;
+    border-radius: 30px;
+    padding: 30px 10px; 
+}
+.cards {
+    width: 900px;
+    margin: 0 auto;
+}
+.card {
+    display: inline-block;
+    width: 270px;
+    height: 232px;
+    background-color: #e2f4ff;
+    border-radius: 10px;
+}
+.card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.card li {
+    font-family: "Montserrat", sans-serif;
+    color: #252b42;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.card li::before {
+    content: '';
+    display: inline-block;
+    background: url(../img/Check-green.svg);
+    width: 32px;
+    height: 32px; 
+    margin: 7px 8px 7px 0; 
+    vertical-align: middle;
+}
+
+/* Тести всякого */
+.image {
+    display: none;
+}
+img {
+    height: 300px;
+}
+
+.link {
+ font-size: 24px;
+ font-weight: 700;
+ margin-bottom: 20px;
+}
+.link:hover {
+    color: green;
+}
+
+.block .link-a {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: #b1faff;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+.link-a:active {
+    color: red;
+}
+.link-a:active + .image {
+    display: block;
+}
+
+/* hover */
+
+.link-b:hover span {
+    color: #ff0008;
+}
+.link-b span:hover {
+    color: #af9500;
+}
+.link-b:visited {
+    color: #3a4fa3;
+}
+.link-c1:focus {
+    color: red;
+    outline: 1px solid red;
+    border-radius: 5px;
+}
+.link-c2:focus-visible {
+    color: yellow;
+}
+.targ {
+    width: 400px;
+    height: 200px;
+    background: url(../img/footer.png);
+}
+.targ:target {
+    width: 600px;
+}
+
+.margin-b {
+    margin-bottom: 10px;
+}
+.block-1 p:last-child {
+    color: #a2daff;
+    margin-bottom: 10px;
+}
+.block-1 p:first-of-type {
+    color: #7ac27a;
+}
+.block-2 p:nth-of-type(odd) {
+    color: #af9500;
+}
+.block-3 p:nth-of-type(3n + 2) {
+    color: #af9500;
+}
+.block-4:not(.no) {
+    color: red;
+}
+.block-5:has(.yes) {
+    color: red;
+}
+
