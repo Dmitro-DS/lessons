@@ -2,8 +2,6 @@
 @import url("reset.css");
 
 
-@import url("fonts.css");
-
 header {
     font-style: normal;
     font-family: "Lato", sans-serif;
@@ -106,4 +104,5 @@ li {
 } 
 .footer-content {
     background-color: rgba(20, 9, 1, 0.5);
+
 }
