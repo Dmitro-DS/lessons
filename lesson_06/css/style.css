@@ -1,0 +1,109 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+
+@import url("fonts.css");
+
+header {
+    font-style: normal;
+    font-family: "Lato", sans-serif;
+    color: #2f302c;
+}
+.head-background {
+    height: 612px;
+    background: url(../img/Rectangle_1.jpg) center no-repeat;
+    padding-left: 50%;
+    padding-top: 114px;
+}
+.head-container {
+    max-height: 612px;
+}
+
+.head-text-1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: black;
+}
+.head-text-2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 1.041;
+    margin-bottom: 52px;
+}
+.head-underline {
+    /* text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 16px;  */
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000;
+    
+}
+.head-text-3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 20px;
+    
+}
+.head-text-4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: #7e7f7c;
+}
+.main-container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.cards {
+    max-width: 1190px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.card {
+    display: inline-block;
+    max-width: 300px;
+    min-height: 400px;
+    background: linear-gradient(215deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    margin: 30px 5px;
+    border-top: 3px solid rgb(152, 16, 16);
+	border-right: 3px dashed rgb(57, 57, 204);
+	border-bottom: 3px double rgb(255, 12, 174);
+	border-left: 3px dotted rgb(112, 112, 26);
+    border-radius: 25% 25% 49% 48% / 13% 13% 35% 35%;;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.68);
+    padding-top: 50px;
+    opacity: 0.8;
+}
+
+
+li {
+    background: url(../img/Check-green.svg) 5px 2px no-repeat;
+    padding: 2px 7px 0 40px;
+    min-height: 37px;
+    line-height: 32px;
+    margin: 0 5px 16px 5px;
+    outline: solid 1px #000000;
+    border-radius: 20px;
+    box-shadow:
+    inset 0px 0px 6px 2px rgba(0, 0, 0, 1);
+}
+.circle-gray {
+    background-image: url(../img/Check-gray.svg);
+}
+.footer-image {
+    min-height: 150px;
+    background: orange url(../img/footer.png) 0 0 / contain repeat-x;
+}
+
+.footer-container {
+    max-width: 1920px;
+    margin: 0 auto;
+} 
+.footer-content {
+    background-color: rgba(20, 9, 1, 0.5);
+}
