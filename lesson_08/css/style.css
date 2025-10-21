@@ -48,10 +48,9 @@ p{
 	height: 477px;
 }
 .last-block img:not(:last-of-type) {
-	padding-right: 50px;
+	padding-right: 114px;
 }
-.last-block img {
-	vertical-align: top;
-}
+
+
 
 
