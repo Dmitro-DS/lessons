@@ -144,7 +144,6 @@
 .c010 {
     margin-top: -5px;
     margin-left: 585px;
-    size: 24px;
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -315,4 +314,5 @@ img {
 .block-5:has(.yes) {
     color: red;
 }
+
 
