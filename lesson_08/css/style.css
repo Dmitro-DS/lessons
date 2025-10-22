@@ -29,7 +29,6 @@ body{
 }
 .block > * {
 vertical-align: middle;
-padding-right: 10px;
 }
 span{
 	font-weight: 600;
@@ -50,6 +49,7 @@ p{
 .last-block img:not(:last-of-type) {
 	padding-right: 114px;
 }
+
 
 
 
