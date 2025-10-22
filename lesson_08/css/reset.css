@@ -5,7 +5,7 @@
     margin: 0;
     border: none;
     box-sizing: border-box;
-    /* display: inline-block; */
+    display: inline-block;
 }
 
 a {
@@ -33,4 +33,5 @@ h6 {
     font-weight: inherit;
     font-size: inherit;
     font-family: inherit;
+
 }
