@@ -177,7 +177,7 @@ body{
 }
 .pricing__item--grey::before {
 	content: '';
-	background: url('../img/Check_badge_grey.png');
+	background: url('../img/Check_badge_grey.png') 0 0 / 100%  no-repeat;
 	
 }
 
@@ -248,5 +248,6 @@ body{
 	line-height: 39px;
 	text-align: center;
 	margin: 0 auto;
+
 
 }
