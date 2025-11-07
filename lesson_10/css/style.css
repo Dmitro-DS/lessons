@@ -1,0 +1,257 @@
+
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair%20Display:wght@400&display=swap');
+ 
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #e8ffe8;
+	
+}
+.wrapper {
+	position: relative;
+	min-width: 100%;
+	overflow: clip;
+}
+
+[class*='__container'] {
+	max-width: 1366px;
+	margin: 0 auto;
+	background: #c3dbc9;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	padding: 30px;
+	border: 1px rgba(0, 255, 102, 0.225) solid;
+}
+
+/* .header */
+
+.menu__items {
+	text-align: center;
+	width: 100%;
+	background-color: #c1d4bd;
+	font-size: 0;
+}
+.menu__item {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	
+}
+.menu__link {
+	min-width: 100px;
+	padding: 0 10px;
+	line-height: 2;	
+}
+.menu__item:not(:last-child) {
+	
+	border-right: 1px solid #a8b9a4;
+}
+
+.menu__item:hover {
+	background-color: #a9bfa4;
+}
+
+
+/* submenu */
+
+.menu__item:hover .menu__submenu {
+	opacity: 1;
+	visibility: visible;
+}
+
+.menu__submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #a9bfa4;	
+	line-height: 2;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.submenu {
+	min-width: 100px;
+	border-end-start-radius: 10px;
+	
+}
+.submenu__item {
+	position: relative;
+}
+
+.submenu__item:hover {
+	background-color: #91a58d;
+}
+.submenu__item:hover:last-of-type {
+	border-end-start-radius: 10px;
+}
+
+
+
+/* submenu--second */
+
+.submenu__item:hover .submenu--second {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.submenu--second {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	background-color: #91a58d;
+	opacity: 0;
+	visibility: hidden;
+	border-top-right-radius: 10px;
+}
+
+.submenu__item--second:hover {
+	background-color: #788975;
+}
+.submenu__item--second:hover:first-of-type {
+	border-top-right-radius: 10px;
+}
+
+.main {
+	margin: 35px 0;
+}
+
+.title-section {
+	font-size: 24px;
+	text-align: center;
+	line-height: 300px;
+}
+.text-section {
+	text-align: center;
+}
+
+
+
+
+/* pricing (Картки)*/
+
+
+.pricing__cards {
+	max-width: 1100px;
+	margin: 0 auto;
+
+} 
+.pricing__card {
+	background-color: #E1F4FF;
+	width: 351px;
+	border-radius: 8px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 40px;
+	box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+	margin-right: 8px;
+	display: inline-block;
+	
+	
+} 
+.pricing__items {
+	color: #252b42;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.7;
+}
+.pricing__item {
+	position: relative;
+	padding-left: 42px;
+}
+.pricing__item:not(:last-of-type) {
+	margin-bottom: 19px;
+}
+
+
+
+
+
+
+.pricing__item::before {
+	position: absolute;
+	top: -5px;
+	left: 0;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	content: '';
+}
+.pricing__item--green::before {
+	background: url('../img/check_badge.png') 0 0 / 100%  no-repeat;
+}
+.pricing__item--grey::before {
+	background: url('../img/Check_badge_grey.png') 0 0 / 100%  no-repeat;
+}
+
+
+
+/* Face */
+
+.blog-cards {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	background-color: #fff;
+	padding: 10px 0;
+}
+.blog-cards__container {
+	background-color: #fff;
+	border: none;
+	border-radius: 0;
+	border-bottom: #000 1px solid;
+	padding: 0 0 67px 0;
+	width: 1000px;
+}
+.blog-cards__title {
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 48px;
+}
+.blog-cards__cards {
+	padding-bottom: 78px;
+	font-size: 0px;
+}
+.blog-cards__card {
+	display: inline-block;
+}
+.blog-cards__card:not(:last-of-type) {
+	margin-right: 123px;
+}
+.card-blog {
+	position: relative;
+	width: 251px;
+	height: 315px;
+}
+.card-blog__title {
+	font-size: 28px;
+	position: absolute;
+	top: 133px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 1.4;
+	color: #fff;
+}
+
+.card-blog__link {
+	font-size: 17px;
+	position: absolute;
+	bottom: 12px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 1.3;
+	color: #fff;
+}
+.blog-cards__button {
+	width: 133px;
+	height: 39px;
+	border: #000 1px solid;
+	font-size: 14px;
+	line-height: 39px;
+	text-align: center;
+	margin: 0 auto;
+
+}
