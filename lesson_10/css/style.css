@@ -176,8 +176,14 @@ body{
 	
 }
 .pricing__item--grey::before {
+	position: absolute;
+	top: -5px;
+	left: 0;
+	display: inline-block;
 	content: '';
 	background: url('../img/Check_badge_grey.png') 0 0 / 100%  no-repeat;
+	width: 32px;
+	height: 32px;
 	
 }
 
@@ -251,3 +257,4 @@ body{
 
 
 }
+
