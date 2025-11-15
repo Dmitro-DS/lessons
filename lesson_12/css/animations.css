@@ -1,0 +1,91 @@
+ @keyframes flight-right {
+    0%,
+    5% {
+        left: 50%;
+	    top: 50%;
+    }
+    20% {
+        left: 85%;
+	    top: 10%;
+    }
+    100% {
+        left: 85%;
+	    top: 10%;
+    }
+    
+ }
+ @keyframes capture-1 {
+    0%,
+    15% {
+        left: 70px;
+        top: 40px;
+    }
+    40%,
+    100% {
+        left: 140px; 
+        top: 180px;
+    }
+    /* 90% {
+        left: 1840px; 
+        top: 180px;
+    }
+    100% {
+        left: 1840px; 
+        top: 180px;
+        display: none;
+    } */
+ }
+ @keyframes capture-2 {
+  0%,
+  10% {
+        right: 70px;
+        top: 40px;
+    }
+  40%,
+  100% {
+        right: 243px; 
+        top: 660px;
+    }
+  /* 90% {
+        right: -1457px; 
+        top: 660px;
+    }
+    100% {
+        right: -1457px; 
+        top: 660px;
+        display: none;
+    } */
+ }
+ @keyframes kidnapping {
+    0%,
+    60% {
+        top: 0;
+        left: 0;
+    }
+    90% {
+        left: 1700px;
+    }
+    100% {
+        left: 1700px;
+        display: none;
+    }
+
+ }
+@keyframes move-up {
+    0%,
+    80% {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    81%{
+        position: absolute;
+        top: 818px;
+        left: 277px; 
+    }
+    100%{
+        position: absolute;
+        top: 200px;
+        left: 277px;
+    }
+}

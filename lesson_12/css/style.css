@@ -1,0 +1,322 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("animations.css");
+
+.wrapper {
+	position: relative;
+	min-width: 100%;
+	overflow: clip;
+	/* Не чіпати */
+	background: url(../img/background.png) fixed;
+	font-family: 'Lato', sans-serif;
+	padding-top: 20px;
+	min-height: 100%;
+	
+
+}
+ 
+h1 {
+	font-weight: 900;
+	font-size: 48px;
+	color: #f1ffbe;
+	text-align: center;
+	/* line-height: 1.5; */
+}
+h2 {
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	line-height: 1.2;
+}
+.ufo {
+	position: relative;
+	height: 150px;
+}
+
+.ufo__object {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+	animation-name: flight-right;
+	/* animation-name: flight-right, next; */
+	/* Час виконання  flight-right та next*/
+	animation-duration: 10s;
+	/* рівномірність виконання анімації */
+	/* animation-timing-function: linear; */
+	/* Затримка виконання анімації */
+	/* animation-delay: 3s;    */
+	/* кількість повторень анімації */
+	/* animation-iteration-count: 6;  */
+	/* Напрямок виконання анімації (alternate - пряма і в обратну сторону) */
+	/* animation-direction: alternate; */
+	/* стан анімації (відразу або можна робить умови - hover чи ще що) */
+	/* animation-play-state: paused; */
+	/* forwards - до елементу по закінченню анімації застосовується стиль останнього ключового кадру. */
+	animation-fill-mode: forwards;
+}
+/* Що б рухалось тільки при наведенні */
+/* .ufo__object:hover {
+	animation-play-state: running;
+
+} */
+
+	/* Купол */
+.ufo__dome {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
+	width: 250px;
+	height: 60px;
+	border-radius: 50% 50% 0 0 / 90% 90% 0 0; 
+	background: radial-gradient(#ffffff, #c7f0ff, #84c8ee);
+	z-index: 2;
+	opacity: 0.8;
+}
+
+
+.ufo__in {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	width: 250px;
+	height: 25px;
+	background-color: #243846;
+	border-radius: 50% 50% 0 0 / 90% 90% 0 0;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+
+/* Основне тіло */
+.ufo__body {
+	position: relative;
+	width: 420px;
+	height: 75px;
+	margin: 0 auto;
+	background: linear-gradient( #7ba1b2 0%, #547f92 55%, #314f63 100%);
+	border-radius: 50% 50% 45% 45%;
+	box-shadow: 0 9px 0 #243846,
+				0 30px 15px rgba(21, 33, 41, 0.8);
+}
+
+
+.ufo__engine {
+	position: absolute;
+	top: 40px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: radial-gradient(#ffffff, #ffe48b 45%, #f7b900 100%);
+	border: 3px solid #f19900;
+	box-shadow: 0 0 10px rgba(255, 215, 64, 0.9);
+}
+.ufo__engine--1 { 
+	left: 70px;
+	animation-name: capture-1;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	/* left: 140px; 
+	top: 180px; */
+}
+.ufo__engine--2 { 
+	right: 70px; 
+	animation-name: capture-2;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	/* right: 243px; 
+	top: 660px; */
+}
+
+
+.ufo__engine--back {
+	top: 28px;
+	width: 26px;
+	height: 26px;
+	border-width: 3px;
+	opacity: 0.9;
+}
+.ufo__engine--back-left  { left: 30px; }
+.ufo__engine--back-right { right: 30px; }
+
+
+/* Блиск корпусу */
+.ufo__highlight {
+	position: absolute;
+	left: 4%;
+	right: 4%;
+	top: 21px;
+	height: 24px;
+	background: radial-gradient(rgba(255, 255, 255, 0.8), transparent 75%); 
+}
+
+[class*='__container'] {
+	background-color: rgba(247, 255, 219, 0.5);
+	max-width: 1366px;
+	margin: 10px auto;
+	border-radius: 10%;
+	padding: 30px;
+}
+
+
+.off {
+	position: relative;
+	animation-name: kidnapping;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+
+}
+
+.transform-2d__items {
+	text-align: center;
+}
+.transform-2d__item,
+.transform-2d__subitem {
+	display: inline-block;
+	width: 222px;
+	height: 150px;
+	margin: 50px;
+	background-color: #fff;
+	outline: #152129 1px solid;
+}
+.transform-2d__subitem {
+	display: inline-block;
+	background-color: #84c8ee;
+	margin: 0;
+	border: none;
+	line-height: 150px;
+}
+
+.transform-2d__subitem--translate,
+.transform-2d__subitem--scale,
+.transform-2d__subitem--rotateY,
+.transform-2d__subitem--rotate,
+.transform-2d__subitem--skew,
+.transform-2d__subitem--skew-x-y,
+.transform-2d__subitem--skew-origin {
+	transition: all 300ms;
+}
+
+
+.transform-2d__item:hover .transform-2d__subitem--translate {
+	transform: translate(20%, -30%);
+}
+.transform-2d__item:hover .transform-2d__subitem--scale {
+	transform: scale(0.5, -0.7);
+}
+.transform-2d__item:hover .transform-2d__subitem--rotateY {
+	transform: rotateY(50deg);
+}
+.transform-2d__item:hover .transform-2d__subitem--rotate {
+	transform: rotate(50deg);
+}
+.transform-2d__item:hover .transform-2d__subitem--skew {
+	transform: skew(-10deg);
+}
+.transform-2d__item:hover .transform-2d__subitem--skew-x-y {
+	transform: skew(-10deg, 30deg);
+}
+.transform-2d__item:hover .transform-2d__subitem--skew-origin {
+	transform-origin: 100% 100%;
+	transform: skew(-10deg, 30deg);
+}
+
+/* 3D */
+.transform-3d {
+	position: relative;
+	animation-name: move-up;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	/* position: absolute;
+	top: 818px;
+	left: 277px; */
+}
+.transform-3d__items {
+	text-align: center;
+	
+}
+.transform-3d__item {
+	perspective: 300px;
+	perspective-origin: center;
+
+}
+.transform-3d__item {
+	position: relative;
+	display: inline-block;
+	width: 222px;
+	height: 150px;
+	margin: 50px;
+	background-color: rgba(255, 255, 255, 0.7);
+	outline: #152129 1px solid;
+	
+}
+
+.transform-3d__subitem,
+.transform-3d__subitem-front {
+	display: inline-block;
+	width: 222px;
+	height: 150px;
+	background-color: #84c8ee;
+	line-height: 150px;
+}
+
+.transform-3d__subitem--translate,
+.transform-3d__subitem--scale,
+.transform-3d__subitem--rotateY,
+.transform-3d__subitem--rotate3d {
+	transition: all 300ms;
+}
+
+.transform-3d__item:hover .transform-3d__subitem--translate {
+	transform: translate3d(20px, -30px, 40px);
+}
+.transform-3d__item:hover .transform-3d__subitem--scale {
+	transform: scale3d(1.2, 1.7, 1.5);
+}
+.transform-3d__item:hover .transform-3d__subitem--rotateY {
+	transform: rotateY(50deg);
+}
+.transform-3d__item:hover .transform-3d__subitem--rotate3d {
+	transform: rotate3d(5, 1, 2, 50deg);
+}
+  
+.transform-3d__item--preserve {
+	transform-style: preserve-3d;
+}
+
+.transform-3d__subitem--skew-origin:hover {
+	transform-origin: 100% 100%;
+	transform: skew(-10deg, 30deg);
+}
+.transform-3d__subitem-back,
+.transform-3d__subitem-front {
+	transition: all 1s;
+}
+.transform-3d__subitem-back {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	width: 222px;
+	height: 150px;
+	background-color: #b3b467;
+	transform: rotateY(180deg);
+	z-index: -1;
+	line-height: 150px;
+}
+.transform-3d__subitem-front {
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
+.transform-3d__item:hover .transform-3d__subitem-front {
+	transform: rotateY(-180deg);
+	
+}
+.transform-3d__item:hover .transform-3d__subitem-back {
+	transform: rotateY(0deg);
+}
