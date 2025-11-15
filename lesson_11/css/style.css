@@ -144,25 +144,25 @@ h2 {
 	line-height: 150px;
 }
 
-.transform-2d__subitem--translate:hover {
+.transform-2d__item:hover .transform-2d__subitem--translate {
 	transform: translate(20%, -30%);
 }
-.transform-2d__subitem--scale:hover {
+.transform-2d__item:hover .transform-2d__subitem--scale {
 	transform: scale(0.5, -0.7);
 }
-.transform-2d__subitem--rotateY:hover {
+.transform-2d__item:hover .transform-2d__subitem--rotateY {
 	transform: rotateY(50deg);
 }
-.transform-2d__subitem--rotate:hover {
+.transform-2d__item:hover .transform-2d__subitem--rotate {
 	transform: rotate(50deg);
 }
-.transform-2d__subitem--skew:hover {
+.transform-2d__item:hover .transform-2d__subitem--skew {
 	transform: skew(-10deg);
 }
-.transform-2d__subitem--skew-x-y:hover {
+.transform-2d__item:hover .transform-2d__subitem--skew-x-y {
 	transform: skew(-10deg, 30deg);
 }
-.transform-2d__subitem--skew-origin:hover {
+.transform-2d__item:hover .transform-2d__subitem--skew-origin {
 	transform-origin: 100% 100%;
 	transform: skew(-10deg, 30deg);
 }
@@ -198,16 +198,16 @@ h2 {
 	line-height: 150px;
 }
 
-.transform-3d__subitem--translate:hover {
+.transform-3d__item:hover .transform-3d__subitem--translate {
 	transform: translate3d(20px, -30px, 40px);
 }
-.transform-3d__subitem--scale:hover {
+.transform-3d__item:hover .transform-3d__subitem--scale {
 	transform: scale3d(1.2, 1.7, 1.5);
 }
-.transform-3d__subitem--rotateY:hover {
+.transform-3d__item:hover .transform-3d__subitem--rotateY {
 	transform: rotateY(50deg);
 }
-.transform-3d__subitem--rotate3d:hover {
+.transform-3d__item:hover .transform-3d__subitem--rotate3d {
 	transform: rotate3d(5, 1, 2, 50deg);
 }
   
