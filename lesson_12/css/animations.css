@@ -76,16 +76,29 @@
     80% {
         position: relative;
         top: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
     81%{
         position: absolute;
         top: 818px;
-        left: 277px; 
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+    99% {
+        position: absolute;
+        top: 196px;
+        /* left: 0;
+	    right: 0; */
+        left: 50%;
+        transform: translateX(-50%);
     }
     100%{
-        position: absolute;
-        top: 200px;
-        left: 277px;
+        position: relative;
+        top: 100px;
+        /* left: 0;
+	    right: 0; */
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

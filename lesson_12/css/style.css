@@ -1,16 +1,21 @@
 @import url("reset.css");
 @import url("fonts.css");
 @import url("animations.css");
-
-.wrapper {
-	position: relative;
-	min-width: 100%;
-	overflow: clip;
-	/* Не чіпати */
+body {
 	background: url(../img/background.png) fixed;
 	font-family: 'Lato', sans-serif;
 	padding-top: 20px;
-	min-height: 100%;
+}
+.main {
+	margin: bottom 10px; ;
+}
+.wrapper {
+	position: relative;
+	/* min-width: 100%; */
+	overflow-x: clip;
+	/* Не чіпати */
+
+	/* min-height: 100%; */
 	
 
 }
@@ -227,11 +232,19 @@ h2 {
 
 /* 3D */
 .transform-3d {
+	min-width: 100%;
 	position: relative;
+    top: 0;
+    /* left: 0;
+	right: 0; */
+	left: 50%;
+    transform: translateX(-50%);
+	
 	animation-name: move-up;
 	animation-duration: 10s;
 	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards; 
+
 	/* position: absolute;
 	top: 818px;
 	left: 277px; */
