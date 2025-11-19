@@ -1,0 +1,170 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body{
+	/* background-color: #e7eee8; */
+	font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+	position: relative;
+	min-width: 100%;
+	overflow: clip;
+}
+
+[class*='__container'] {
+	max-width: 1392px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	padding: 82px 0;
+	color: #2f302c;
+	font-family: 'Lato', sans-serif;
+}
+
+.flex {
+	padding: 15px;
+	background-color: #794f45;
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	/* align-items: center; */
+	/* gap: 10px 30px; */
+	/* row-gap: 10px; */
+	/* column-gap: 30px; */
+	/* flex-direction: row-reverse; */
+}
+.flex__item {
+	padding: 25px;
+	background-color: #77608d;
+	font-size: 20px;
+	border-bottom: solid 1px #000;
+	/* Базовий розмір по основній осі */
+	/* flex-basis: 150px; */
+	/* grow за замовчанням 0 - забороняється збільшуватись більше ніж basis */
+	/* flex-grow: 0; */
+	/* shrink за замовчанням 1 - елементам дозволяється зменшуватись менше basis */
+	/* flex-shrink: 1; */
+	/* універсальна властивість де відповідно вказуються grow shrink basis */
+	/* flex: 0 1 150px; */
+}
+/* .flex__item:nth-child(1) {
+	align-self: flex-start;
+	order: 1;
+}
+.flex__item:nth-child(2) {
+	flex-grow: 1;
+	order: 4;
+}
+.flex__item:nth-child(3) {
+	flex-grow: 1;
+	order: 3;
+}
+.flex__item:nth-child(4) {
+	align-self: flex-end;
+	order: 2;
+} */
+
+/* .products {} */
+
+.products__title {
+	margin-bottom: 36px;
+}
+.title-section {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 1.25;
+	text-align: center;
+}
+.products__tabs {
+	display: flex;
+	justify-content: center;
+	column-gap: 48px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 125%;
+	text-transform: uppercase;
+	margin-bottom: 72px;
+}
+.products__tab--active {
+	padding: 0 0 8px;
+	height: 28px;
+	border-bottom: 1.7px solid #2f302c;
+}
+.products__cards {
+	display: flex;
+	justify-content: space-between;
+	gap: 72px 36px;
+	flex-wrap: wrap;
+	
+}
+.products__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 440px;
+}
+.products__img {
+	margin-bottom: 32px;
+}
+.products__name {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 125%;
+	text-align: center;
+	margin-bottom: 12px;
+}
+.products__rating {
+	display: flex;
+	column-gap: 4px;
+	/* justify-content: center; */
+	margin-bottom: 12px;
+}
+.products__star {
+	background: url("../img/icons/star.svg") no-repeat center center / contain;
+	width: 16px;
+	height: 16px;
+}
+.products__price {
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 140%;
+}
+
+/* .advantages {} */
+
+.advantages__title {
+	margin-bottom: 72px;
+}
+
+.advantages__items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 68px;
+	justify-content: center;
+}
+.advantages__item {
+	width: 348px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.advantages__item-title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.25;
+}
+.advantages__img,
+.advantages__item-title {
+	margin-bottom: 24px;
+}
+
+.advantages__item-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.25;
+	text-align: center;
+	color: #7e7f7c;
+}
