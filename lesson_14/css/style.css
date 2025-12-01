@@ -145,7 +145,7 @@ opacity: 0;
 }
 .big-form button: active {
 	background: radial-gradient(circle,rgba(255, 255, 255, 1) 6%, rgb(33, 89, 38) 100%);
-	color: rgb(84, 84, 84);
+	color: #545454;
 }
 
 /* ///////////////   REGISTER TO FURNITUR */
@@ -299,3 +299,4 @@ opacity: 0;
 	background-color: #e1d7ff;
 
 }
+
