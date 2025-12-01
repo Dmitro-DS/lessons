@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lsson 14</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">1</header>
+			<main class="main">
+
+				<!-- REGISTER TO FURNITUR -->
+
+				<div class="register">
+					<div class="register__container">
+						<div class="register__header">
+							<h2 class="register__title title-section">REGISTER TO FURNITUR</h2>
+							<p class="register__promo">GET MONTHLY VOUCHER WITH JUST ONE CLICK!</p>
+						</div>
+
+						<div class="register__content">
+							<div class="register__user user">
+								<div class="user__title">
+									<h3>YOUR INFORMATION</h3>
+									<p>You already have an account? <a href="#">Sign in here</a> </p>
+								</div>
+								<form action="#" method="post" id="user__form">
+									<input type="text" name="username" placeholder="Your name"
+										autocomplete="off" required tabindex="1">
+									<input type="email" name="useremail" placeholder="E-mail"
+										autocomplete="off" required tabindex="2">
+									<input type="tel" name="userphone" placeholder="Phone number"
+										autocomplete="off" required tabindex="3">
+									<input type="password" name="userpassword" placeholder="Password"
+										autocomplete="off" required tabindex="4">
+									<input type="password" name="userpasswordsecond"
+										placeholder="Reset Password" autocomplete="off" required tabindex="5">
+								</form>
+								<button type="submit" form="user__form">Create an account</button>
+							</div>
+
+							<div class="register__banner banner">
+								<img src="img/light-copper-second.jpg"
+									alt="стильні потолочні світильники"
+									class="banner__img">
+								<div class="banner__text">
+									<div class="banner__status">HOT</div>
+									<div class="banner__information">DISCOUNT <br>25% FOR <br>NEW
+										<br>MEMBER</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="big-form">
+					<div class="big-form__container">
+						<form method="post" enctype="multipart/form-data" action="#"
+							class="big-form__main-form">
+							<!--   
+								placeholder="текст"  - інформаційний підпис для поля вводу
+								required             - не дає відправити пусте поле
+								tabindex="1"         - порядок пересування по полях при натисканні tab
+														мінусове значення виключає з активації табом
+								maxlength="10" minlength="3" - ліміти на кількість символів
+								disabled             - робить інпут не активним
+								pattern="^[a-zA."    - може використовуватись для перевірки e-mail або ...
+								label                - для підпису поля, також може зв'язуватись з ним
+							-->
+
+							<div class="big-form__item">
+								<label class="from__lable">
+									<h5>label - підпис для поля 2</h5>
+									<input id="id-sometext2"
+										name="sometext2"
+										placeholder="Введіть що-небудь"
+										type="text"
+										class="big-form__input-shadow">
+								</label>
+								<span>text</span>
+							</div>
+							<div class="big-form__item">
+								<label for="id-sometext1">label - підпис для поля 1</label>
+								<span>text</span>
+								<input id="id-sometext1"
+									name="sometext1"
+									placeholder="Введіть що-небудь"
+									autocomplete="on"
+									type="text"
+									required
+									tabindex="1"
+									maxlength="10"
+									minlength="3"
+									class="big-form__input-shadow">
+							</div>
+							<div class="big-form__item">
+								<span>checkbox</span>
+								<input name="checkbox-changed" type="checkbox">
+
+							</div>
+							<div class="big-form__item">
+								<label class="checkbox">
+									<span>checkbox-custom</span>
+									<input name="checkbox" type="checkbox" class="checkbox-custom">
+								</label>
+							</div>
+							<div class="big-form__item">
+								<span>radio</span>
+								<input name="radio" type="radio">
+
+							</div>
+							<div class="big-form__item">
+								<span>color</span>
+								<input name="color" type="color">
+
+							</div>
+							<div class="big-form__item">
+								<span>date</span>
+								<input name="date" type="date" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>month</span>
+								<input name="month" type="month" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>week</span>
+								<input name="week" type="week" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>datetime-local</span>
+								<input name="datetimelocal" type="datetime-local"
+									class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>time</span>
+								<input name="time" type="time" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>email</span>
+								<input name="email" type="email" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>file</span>
+								<input name="file" type="file" multiple accept="image/png, image/jpeg"
+									class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>hidden</span>
+								<input name="hidden" type="hidden">
+
+							</div>
+							<div class="big-form__item">
+								<span>image</span>
+								<input name="image" type="image">
+
+							</div>
+
+							<div class="big-form__item">
+								<span>number</span>
+								<input name="number" type="number" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>password</span>
+								<input name="password" type="password" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>range</span>
+								<input name="range" type="range">
+
+							</div>
+							<div class="big-form__item">
+								<span>reset</span>
+								<input name="reset" type="reset" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>search</span>
+								<input name="search" type="search" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>submit</span>
+								<input name="submit" type="submit" class="big-form__input-shadow">
+
+							</div>
+							<div class="big-form__item">
+								<span>tel</span>
+								<input name="tel" type="tel" class="big-form__input-shadow">
+
+							</div>
+
+							<div class="big-form__item">
+								<span>url</span>
+								<input name="url" type="url" class="big-form__input-shadow">
+
+							</div>
+
+							<div class="big-form__item">
+								<select name="select-list">
+									<option value>Пункт 1</option>
+									<option value>Пункт 2</option>
+									<option value>Пункт 3</option>
+
+								</select>
+							</div>
+							<div class="big-form__item">
+								<textarea name="message" autocomplete="off"
+									class="big-form__input-shadow big-form__textarea"></textarea>
+							</div>
+							<div class="big-form__item">
+								<button type="button">Button</button>
+								<button type="reset">Reset </button>
+								<button type="submit">Submit</button>
+							</div>
+							<div class="form__line">
+								<label class="checkbox-two">
+									<input type="checkbox" name="form[]" class="checkbox-two__input">
+									Щось
+								</label>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">3</footer>
+		</div>
+	</body>
+</html>
