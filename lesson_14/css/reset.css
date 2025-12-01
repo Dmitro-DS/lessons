@@ -48,4 +48,6 @@ button,
 input[type="checkbox"],
 input[type="radio"] {
     cursor: pointer;
+    font-family: inherit;
+
 }
